@@ -1,0 +1,6 @@
+1: npm init
+2: criar o .gitignore
+3: criar index.js
+4: instalar express: npm install express ejs
+5: em index.js importar express e criar estrutura inicial, por pra escultar na porta 3000, direcionar consultas de arquivo ejs e criar tambem o arquivo inicial dentro de view/home.ejs
+6:
