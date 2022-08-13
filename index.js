@@ -3,6 +3,7 @@ const express = require('express')
 const expressLayouts = require('express-ejs-layouts')
 const app = express()
 const path = require('path')
+const convert = require('./lib/convert')
 
 //Static files
 app.use(express.static("public"));
@@ -25,6 +26,19 @@ app.set('views', path.join(__dirname, 'views'));
     app.get('/about', (req, res) => { 
         res.render('about')
      })
+     app.get('/cotacao', (req, res) => { 
+        //desestrutura os parâmentros da função convert nessa página 
+        const {cotacao, quantidade} = req.query
+        //estancia em conversao a execução da função convert que está em convert.js 
+        const conversao = convert.convert(cotacao,quantidade)
+        //
+        res.render('cotacao',{
+            cotacao,
+            quantidade,
+            conversao
+        })
+     })
+
 
 
 

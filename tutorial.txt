@@ -16,4 +16,12 @@
 
 9:separar o footer e o header em dois arquivos  depois importar pra home e outras páginas com a tag <%- include(') %>
 
-10: em home.ejs inseir 3 <input> e 1 <button> dentro do <form method="GET">
+10: em home.ejs inseir 3 <input> e 1 <button> dentro do <form method="GET" action="/cotacao">
+
+11: criar lib/convert.js e nela criar funções pra converter e pra retonar 0 depois da virgula
+
+12:ir no index e add mais uma navigation route /cotacao
+
+13: importar o convert, configurar a rota cotacao pra receber a função conevert e seus parâmetros
+
+14:criar novo arquivo da cotacao.ejs onde vai renderizar os resultados 
