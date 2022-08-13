@@ -29,3 +29,11 @@
 15:em convert.js pasei um parseFloat em na função toMoney eno index.js na rota cotação converti todos o valores pra toMoney tambem
 
 16: pra tratar a função pra caso retornar vazio: na rota cotacao em index.js add um if else, depois configura o tratamento de render tambem em cotacao.ejs usando <%if else%> desse jeito e pot ultimom em index.js add error: false
+
+17: ADICIONANDO TEST UNITÁRIO teste unitário só faz durasnte o processo de desenvolvimento nunca quando está em produção
+
+18:: npm install --save-dev jest e add "test": "jest",no script de package.json. depois de dar npm test pra rodar o test
+
+19:criar arquivo com o mesmo nome do arquivo que será testado: no caso criar o convert.test.js, dentro dele importar o convert.js e criar tests pra depois rodar o test no console se na função ou no est tiver diferença entre o recebido e ou experado o teste vai falhar. o test é a representação do arquivo filho que vai rodar o codigo do arquivo pai se um dos dois tiverem divergente o teste vai mostrar
+
+20:criar vercel.json e add build e routs politica de segurnaçã da vercel;

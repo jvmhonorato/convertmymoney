@@ -37,7 +37,7 @@ app.set('views', path.join(__dirname, 'views'));
             error:false,
             cotacao: convert.toMoney(cotacao),
             quantidade:convert.toMoney(quantidade),
-            conversao:convert.toMoney(cotacao),
+            conversao:convert.toMoney(conversao),
         })
         }else{
             res.render('cotacao', {

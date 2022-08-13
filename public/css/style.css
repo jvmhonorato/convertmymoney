@@ -2,10 +2,12 @@ body {
 
 text-align: center;
 height: 80px;
+background: #f7ce5b;
 }
 
-h1 {
- 
+.link {
+ text-decoration: none;
+ color: #1f1300;
 }
 input{
     border: 1px solid #000000;
