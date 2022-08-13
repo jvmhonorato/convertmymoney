@@ -1,6 +1,7 @@
 body {
-background-color: rgb(211, 212, 212);
+
 text-align: center;
+height: 80px;
 }
 
 h1 {
@@ -17,4 +18,14 @@ input{
 button{
     font-size: 20px;
     padding: 10px;
+}
+.result{
+   padding:10px;
+   border: solid ; 
+}
+.result h1{
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+
 }

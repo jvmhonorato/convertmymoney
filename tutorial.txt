@@ -25,3 +25,7 @@
 13: importar o convert, configurar a rota cotacao pra receber a função conevert e seus parâmetros
 
 14:criar novo arquivo da cotacao.ejs onde vai renderizar os resultados 
+
+15:em convert.js pasei um parseFloat em na função toMoney eno index.js na rota cotação converti todos o valores pra toMoney tambem
+
+16: pra tratar a função pra caso retornar vazio: na rota cotacao em index.js add um if else, depois configura o tratamento de render tambem em cotacao.ejs usando <%if else%> desse jeito e pot ultimom em index.js add error: false

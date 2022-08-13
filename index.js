@@ -29,14 +29,22 @@ app.set('views', path.join(__dirname, 'views'));
      app.get('/cotacao', (req, res) => { 
         //desestrutura os parâmentros da função convert nessa página 
         const {cotacao, quantidade} = req.query
-        //estancia em conversao a execução da função convert que está em convert.js 
+        if(cotacao && quantidade){
+             //estancia em conversao a execução da função convert que está em convert.js 
         const conversao = convert.convert(cotacao,quantidade)
         //
         res.render('cotacao',{
-            cotacao,
-            quantidade,
-            conversao
+            error:false,
+            cotacao: convert.toMoney(cotacao),
+            quantidade:convert.toMoney(quantidade),
+            conversao:convert.toMoney(cotacao),
         })
+        }else{
+            res.render('cotacao', {
+                error:'Valores inválidos'
+            })
+        }
+       
      })
 
 
