@@ -4,12 +4,14 @@
   "description": "conver money\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[Dt\u001b[C\u001b[D \u001b[C\u001b[C\u001b[D\u001b[Dm\u001b[C\u001b[C\u001bmoney",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "author": "jvmh",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.8",
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "express-ejs-layouts": "^2.5.1"
   }
 }

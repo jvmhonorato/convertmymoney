@@ -1,6 +1,19 @@
 1: npm init
+
 2: criar o .gitignore
+
 3: criar index.js
-4: instalar express: npm install express ejs
-5: em index.js importar express e criar estrutura inicial, por pra escultar na porta 3000, direcionar consultas de arquivo ejs e criar tambem o arquivo inicial dentro de view/home.ejs
-6:
+
+4: instalar express: npm install express ejs ,npm install express-ejs-layouts
+
+5: em index.js importar express e demais imports, criar estrutura inicial, por pra escultar na porta 3000
+
+6: criar o statics files , template engines and Navigation routes
+
+7:criar pasta public e dentro dela pasta css com o arquivo styles.css dentro
+
+8:linkar css em header.ejs a style.css, e configurar ao seu gosto lincar uma img da logo ao header
+
+9:separar o footer e o header em dois arquivos  depois importar pra home e outras páginas com a tag <%- include(') %>
+
+10: em home.ejs inseir 3 <input> e 1 <button> dentro do <form method="GET">
