@@ -37,3 +37,11 @@
 19:criar arquivo com o mesmo nome do arquivo que será testado: no caso criar o convert.test.js, dentro dele importar o convert.js e criar tests pra depois rodar o test no console se na função ou no est tiver diferença entre o recebido e ou experado o teste vai falhar. o test é a representação do arquivo filho que vai rodar o codigo do arquivo pai se um dos dois tiverem divergente o teste vai mostrar
 
 20:criar vercel.json e add build e routs politica de segurnaçã da vercel;
+
+21: Pra buscar cotação automatica seguir os procedimentos:
+
+22: instalar o axios: npm install axios
+
+23: criar primeiramene arquivo teste-api.js pra testar em seguida criar em lib/apip.bcb.js 
+
+24: importar o axios estanciar a url 
