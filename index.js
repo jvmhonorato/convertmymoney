@@ -4,6 +4,7 @@ const expressLayouts = require('express-ejs-layouts')
 const app = express()
 const path = require('path')
 const convert = require('./lib/convert')
+const apiBCB = require('./lib/api.bcb')
 
 //Static files
 app.use(express.static("public"));
@@ -20,8 +21,13 @@ app.set('views', path.join(__dirname, 'views'));
 
 
 //Navigation
-    app.get('/', (req, res) => { 
-       res.render('home')
+     // deixar consulta async depois estanciar com await, chamar como segundo parâmentro em forma de obj em res.render
+    app.get('/', async (req, res) => { 
+        const cotacao = await apiBCB.getCotacao()
+        console.log('cotacao',cotacao)
+       res.render('home', {
+        cotacao
+       })
     })
     app.get('/about', (req, res) => { 
         res.render('about')

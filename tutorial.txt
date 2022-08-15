@@ -42,6 +42,10 @@
 
 22: instalar o axios: npm install axios
 
-23: criar primeiramene arquivo teste-api.js pra testar em seguida criar em lib/apip.bcb.js 
+23: criar primeiramene arquivo teste-api.js pra testar em seguida criar em lib/api.bcb.js 
 
-24: importar o axios estanciar a url 
+24: configurar toda a API com funções async e depois exportar o modulos
+
+25: em index.js onde estão as rotas importar os modulos e configurar a rota /home com uma função async,  estanciar o modulo que foi importado e depois chamar essa const no segundo parâmentro de res.render
+
+26:em seguida em home.ejs no input contacao add value="value="<%= cotacao %>" pra renderizar o valor da cotacao automaticamente
