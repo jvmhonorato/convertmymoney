@@ -3,10 +3,26 @@ const  axios = require('axios');
 
 const date = moment().format('DD-MM-YYYY')
 
-const url = `https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarDia(dataCotacao=@dataCotacao)?@dataCotacao='08-08-2022'&$top=100&$format=json&$select=cotacaoCompra,cotacaoVenda,dataHoraCotacao`
 
-axios
-.get(url)
-.then(res => console.log(res.data.value[0].cotacaoVenda))
+const Gurl = data => `https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarDia(dataCotacao=@dataCotacao)?@dataCotacao='${data}'&$top=100&$format=json&$select=cotacaoCompra,cotacaoVenda,dataHoraCotacao`
 
-console.log(date)
+const getCotacaoAPI = data => axios.get(Gurl(data))
+const extractCotacao = res => res.data.value[0].cotacaoVenda
+
+
+const funcTest = async() =>{
+    try{
+    const res = await getCotacaoAPI(date)
+    const cotacao = extractCotacao(res)
+    console.log(cotacao)
+    return cotacao
+ }catch(err){
+    console.log(err)
+ }
+}
+
+
+
+
+
+console.log(funcTest)

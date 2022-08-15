@@ -49,3 +49,5 @@
 25: em index.js onde estão as rotas importar os modulos e configurar a rota /home com uma função async,  estanciar o modulo que foi importado e depois chamar essa const no segundo parâmentro de res.render
 
 26:em seguida em home.ejs no input contacao add value="value="<%= cotacao %>" pra renderizar o valor da cotacao automaticamente
+
+27: em api.bcb.js adicionar um try{}catch{} na função async retornado vazio pra não quebra o código
