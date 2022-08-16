@@ -51,3 +51,9 @@
 26:em seguida em home.ejs no input contacao add value="value="<%= cotacao %>" pra renderizar o valor da cotacao automaticamente
 
 27: em api.bcb.js adicionar um try{}catch{} na função async retornado vazio pra não quebra o código
+
+28: testanto app com jest: criamos o api.bcb.test.js pra testa a api
+
+29: EM package.json adicionamos   "jest":{
+    "collectCoverage":true
+  } 
