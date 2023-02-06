@@ -2,7 +2,9 @@ body {
 
 text-align: center;
 height: 80px;
-background: #f7ce5b;
+background: #F0F8FF;
+padding:200px;
+
 }
 
 .link {
@@ -20,14 +22,18 @@ input{
 button{
     font-size: 20px;
     padding: 10px;
+    margin:30px;
+    background: rgb(66, 184, 221);
 }
 .result{
    padding:10px;
    border: solid ; 
+   margin:50px;
 }
 .result h1{
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
     padding: 10px;
+    
 
 }
