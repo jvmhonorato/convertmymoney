@@ -54,7 +54,7 @@ $ npm  start
 ![convertmymoney1](https://user-images.githubusercontent.com/101150943/217098944-10f4ce0c-1a4f-4321-89db-31fd1f6062c0.jpg)
 
 
-### 2 On this page you will see the converted value
+### 2 - On this page you will see the converted value
 
 ![convertmymoney2](https://user-images.githubusercontent.com/101150943/217098956-7c22accc-e357-4aeb-95d2-d8b65b5021f3.jpg)
 
