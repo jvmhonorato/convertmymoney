@@ -59,7 +59,7 @@ $ npm  start
 ![convertmymoney2](https://user-images.githubusercontent.com/101150943/217098956-7c22accc-e357-4aeb-95d2-d8b65b5021f3.jpg)
 
 
-### 5 - see in operation
+### 5 - See in operation
 
 https://user-images.githubusercontent.com/101150943/217099914-b47e8afe-b97a-44f3-9446-26866f8b827d.mp4
 
