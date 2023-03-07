@@ -3,7 +3,7 @@
 
 
 
-Application to convert currency
+Application to convert currency made with an API that takes the current value of the Dollar
 
 
 ## Technology 
