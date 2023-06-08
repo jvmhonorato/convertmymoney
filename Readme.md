@@ -6,7 +6,7 @@
 Application to convert currency made with an API that takes the current value of the Dollar
 
 
-## Technology 
+## Technologies 
 
 Here are the technologies used in this project.
 
